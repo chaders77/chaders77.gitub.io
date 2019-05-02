@@ -1,0 +1,47 @@
+body {
+    border: solid black 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    background-color: black;
+    color: white;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    padding: 5px;
+    margin: 5px;
+}
+li {
+    height: 80px;
+    margin: 5px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.content {
+    display: flex;
+  }
+.text {
+    margin: 0 0 0 20px;
+}
+.sidebar {
+    padding: 0 20px 20px 20px;
+    width: 40%;
+    vertical-align: top;
+    display: inline-block;
+    background-color: white;
+ } 
+
+  @media all and (max-width: 600px) {
+  
+    .container {
+      flex-wrap: wrap;
+    }
+    
+    .container > li {
+      flex-basis: 50%;
+    }
+  }
